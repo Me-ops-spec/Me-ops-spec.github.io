@@ -1,0 +1,210 @@
+
+
+*,
+html,
+:after,
+:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+header,
+nav,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-style: normal;
+}
+
+footer,
+article,
+aside,
+div,
+footer,
+header,
+nav,
+section,
+span {
+  display: block;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.anim,
+.homepage-box.feature-play:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.row:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+* html .row {
+  zoom: 1;
+} /* IE6 */
+*:first-child + html .row {
+  zoom: 1;
+} /* IE7 */
+
+
+
+body {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  background: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+article {
+  color: white;
+}
+
+.play-button h1 {
+  font-family: "Fondamento", cursive;
+  font-size: 22px;
+  font-weight: normal;
+}
+.container {
+  margin: 50px 0px 150px;
+}
+
+
+.homepage-box.feature-play {
+  overflow: hidden;
+  position: relative;
+  width: 280px;
+  height: 284px;
+  border: 4px solid #a27822;
+  border-radius: 10px;
+  background: url("../images/background.png")
+    bottom center no-repeat;
+  background-position: center bottom;
+  background-size: 280px;
+}
+
+.homepage-box.feature-play:before {
+  content: "";
+  display: block;
+  width: 272px;
+  height: 276px;
+  background: url("../images/background.png")
+    bottom center no-repeat;
+}
+
+.homepage-box.feature-play:hover:before {
+  transform: scale(1.1);
+}
+
+.play-button {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 90%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 252px;
+  height: 50px;
+  border-radius: 27px/20px;
+  background: url("../images/background.png")
+    bottom center no-repeat;
+  background-size: 254px;
+}
+
+.homepage-box.feature-play:hover h1 {
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.homepage-box.feature-play:hover .play-button {
+  -moz-box-shadow: 0 10px 50px #ff7501;
+  -webkit-box-shadow: 0 10px 50px #ff7501;
+}
+
+.homepage-box.feature-play:hover {
+  background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 252, 252, 0.298) 50%,
+        rgba(0, 0, 0, 0) 90%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      no-repeat,
+    url("../images/music.png");
+  background-position: center bottom;
+  background-size: 280px;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+}
+
+footer h1 {
+  padding: 20px;
+  font-size: 10px;
+  color: #fff;
+}
+
+#cakeforge {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 78px;
+  background: url("../images/music.png")
+    bottom center no-repeat;
+  background-size: 100%;
+}
+h1{
+  color: white;
+}

@@ -1,0 +1,155 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 48vh;
+  }
+  50% {
+    left: 50%;
+    top: 25vh;
+  }
+  100% {
+    left: 105%;
+    top: 38vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 3vh;
+  }
+  50% {
+    left: 50%;
+    top: 29vh;
+  }
+  100% {
+    left: 105%;
+    top: 6vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 47vh;
+  }
+  50% {
+    left: 50%;
+    top: 28vh;
+  }
+  100% {
+    left: 105%;
+    top: 43vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 40vh;
+  }
+  50% {
+    left: 50%;
+    top: 20vh;
+  }
+  100% {
+    left: 105%;
+    top: 62vh;
+  }
+}
+@keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 24vh;
+  }
+  50% {
+    left: 50%;
+    top: 6vh;
+  }
+  100% {
+    left: 105%;
+    top: 48vh;
+  }
+}
+@keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 35vh;
+  }
+  50% {
+    left: 50%;
+    top: 41vh;
+  }
+  100% {
+    left: 105%;
+    top: 50vh;
+  }
+}
+body {
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  bottom: -16px;
+  left: 32px;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+
+.duck-1 {
+  position: absolute;
+  animation: duck-fly-1 5s linear 1s 1 both;
+}
+
+.duck-2 {
+  position: absolute;
+  animation: duck-fly-2 5s linear 2s 1 both;
+}
+
+.duck-3 {
+  position: absolute;
+  animation: duck-fly-3 5s linear 3s 1 both;
+}
+
+.duck-4 {
+  position: absolute;
+  animation: duck-fly-4 5s linear 4s 1 both;
+}
+
+.duck-5 {
+  position: absolute;
+  animation: duck-fly-5 5s linear 5s 1 both;
+}
+
+.duck-6 {
+  position: absolute;
+  animation: duck-fly-6 5s linear 6s 1 both;
+}
+.duck-7{
+  position:absolute;
+  animation: duck-fly-7 5s linear 7s 1 both;
+}
+
+img {
+  width: 50px;
+}
+
+input[type=checkbox]:checked {
+  counter-increment: count;
+}
+
+input[type=checkbox]:checked + img {
+  visibility: hidden;
+  display: none;
+}
+
+h1::after {
+  content: " " counter(count);
+}

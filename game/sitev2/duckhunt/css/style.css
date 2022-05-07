@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: eightBitFont;
+  src: url(../fonts/8_bit_madness/8-Bit\ Madness.ttf);
+}
+
+#mainContainer {
+  width: 1000px;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+body {
+  font-family: eightBitFont;
+  background-color: black;
+}
+
+.killer{
+  top: 0;
+  width: 100px;
+  margin-top: 0;
+  margin-left: 500px;
+}
